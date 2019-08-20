@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Click and watch what going on.</p>
+
+<button onclick="myFunction()">Dewej</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  var text;
+  var person = prompt("What's your name?");
+  switch(person) {
+    case "Alice":
+      text = "Hello Alice.";
+      break;
+    case "Bob":
+      text = "Hello Bob.";
+      break;
+    default:
+      text = "I greet only Alice and Bob";
+  }
+  document.getElementById("demo").innerHTML = text;
+}
+</script>
+
+</body>
+</html>
