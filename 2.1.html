@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <meta charset="UTF-8" ; />
+        <body>
+                <p>The highest number is <span id="demo"></span>.</p>
+            <script>
+                var num = [110, 220, 3030, 4040, 500500];
+                document.getElementById("demo").innerHTML = myArrayMax(num);
+            function myArrayMax(arr){
+                let len = arr.length
+                let max= - Infinity;
+                while (len--){
+                    if(arr[len]>max){
+                        max=arr[len];
+                    }
+                }
+            return max; 
+            }
+            </script>
+        </body>
+    </head>
+</html>
+</DOCTYPE!>
