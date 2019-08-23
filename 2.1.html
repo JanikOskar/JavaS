@@ -1,24 +1,28 @@
 <!DOCTYPE html>
 <html>
-    <head>
-            <meta charset="UTF-8" ; />
-        <body>
-                <p>The highest number is <span id="demo"></span>.</p>
-            <script>
-                var num = [110, 220, 3030, 4040, 500500];
-                document.getElementById("demo").innerHTML = myArrayMax(num);
-            function myArrayMax(arr){
-                let len = arr.length
-                let max= - Infinity;
-                while (len--){
-                    if(arr[len]>max){
-                        max=arr[len];
-                    }
+
+<head>
+    <meta charset="UTF-8" ; />
+
+<body>
+    <p>The highest number is <span id="demo"></span>.</p>
+    <script>
+        var num = [91000, 220, 3030, 4444040, 500500];
+        document.getElementById("demo").innerHTML = myArrayMax(num);
+
+        function myArrayMax(arr) {
+            let length = arr.length
+            let max = num[0];
+            for (length = 1; length < arr.length; length++) {
+                if (arr[length] > max) {
+                    max = arr[length];
                 }
-            return max; 
             }
-            </script>
-        </body>
-    </head>
+            return max;
+        }
+    </script>
+</body>
+</head>
+
 </html>
 </DOCTYPE!>

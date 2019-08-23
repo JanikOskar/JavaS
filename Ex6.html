@@ -1,33 +1,36 @@
 <DOCTYPE! html>
   <html>
-    <head>
-      <title>Exercise 6</title>
-    </head>
-    <body>
-      <button onclick="myFunction()">Try it</button>
-      <p id="demo"></p>
-      <script>
-        function myFunction() {
-          let choice = prompt("Take s for sum or m for multi");
-          if (choice === "s") {
-            var n = Number(prompt("Your number"));
-            let sum = 0;
-            for (i = 1; i <= n; i++) {
-              sum += i;
-            }
-            document.getElementById("demo").innerHTML = sum;
-          } else if (choice === "m") {
-            var n = Number(prompt("Your number"));
-            let mul = 1;
-            for (i = 1; i <= n; i++) {
-              mul *= i;
-            }
-            document.getElementById("demo").innerHTML = mul;
-          } else {
-            document.write("Wrong letter");
+
+  <head>
+    <title>Exercise 6</title>
+  </head>
+
+  <body>
+    <button onclick="myFunction()">Try it</button>
+    <p id="demo"></p>
+    <script>
+      function myFunction() {
+        let choice = prompt("Take s for sum or m for multi");
+        if (choice === "s") {
+          var n = Number(prompt("Your number"));
+          let sum = 0;
+          for (i = 1; i <= n; i++) {
+            sum += i;
           }
+          document.getElementById("demo").innerHTML = sum;
+        } else if (choice === "m") {
+          var n = Number(prompt("Your number"));
+          let mul = 1;
+          for (i = 1; i <= n; i++) {
+            mul *= i;
+          }
+          document.getElementById("demo").innerHTML = mul;
+        } else {
+          document.write("Wrong letter");
         }
-      </script>
-    </body>
-  </html></DOCTYPE!
->
+      }
+    </script>
+  </body>
+
+  </html>
+</DOCTYPE!>

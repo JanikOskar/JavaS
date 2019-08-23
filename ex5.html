@@ -1,21 +1,26 @@
 <DOCTYPE! html>
   <html>
-    <head>
-      <meta charset="UTF-8" ; />
-      <title>Exercise 5</title>
-    </head>
-    <body>
-      <button onclick="myFunction()">Try it</button>
-      <p id="demo"></p>
-      <script>
-        function myFunction() {
-          let n = Number(prompt("Take your number"));
-          let sum = 0;
-          for (let i = 3; i < n; i++) if (i % 3 == 0 || i % 5 == 0) sum += i;
 
-          document.getElementById("demo").innerHTML = sum;
-        }
-      </script>
-    </body>
-  </html></DOCTYPE!
->
+  <head>
+    <meta charset="UTF-8" ; />
+    <title>Exercise 5</title>
+  </head>
+
+  <body>
+    <button onclick="myFunction()">Try it</button>
+    <p id="demo"></p>
+    <script>
+      function myFunction() {
+        let n = Number(prompt("Take your number"));
+        let sum = 0;
+        for (let i = 3; i < n; i++)
+          if (i % 3 == 0 || i % 5 == 0)
+            sum += i;
+        document.getElementById("demo").innerHTML = sum;
+      
+      }
+    </script>
+  </body>
+
+  </html>
+</DOCTYPE!>
